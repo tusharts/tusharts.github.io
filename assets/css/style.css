@@ -650,6 +650,19 @@ section {
   padding: 0;
 }
 
+
+
+
+.portfolio-item .portfolio-wrap img {
+  width: 100%;
+  height: 250px; /* Set the desired height */
+  object-fit: cover;
+}
+
+.portfolio-item {
+  padding: 15px; /* Adjust padding to create symmetrical spacing */
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
