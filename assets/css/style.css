@@ -281,7 +281,7 @@ h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #173b6c;
 }
 
 @media (min-width: 1024px) {
@@ -302,6 +302,24 @@ h6 {
     margin-bottom: 30px;
   }
 }
+/* Add this to your CSS file */
+.bigger-social-links a {
+  font-size: 50px; /* Adjust the font size as needed */
+  margin: 0 10px; /* Adjust the spacing between icons as needed */
+}
+/* Add this to your CSS file */
+.bigger-social-links {
+  margin-left: -200px; /* Adjust the margin-left value as needed */
+}
+.bigger-social-links {
+  position: relative;
+  top: -40px; /* Adjust the top value as needed */
+}
+
+.bigger-social-links i {
+  color: #173b6c;
+}
+
 
 /*--------------------------------------------------------------
 # Sections General
