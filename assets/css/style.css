@@ -316,11 +316,6 @@ h6 {
   top: -40px; /* Adjust the top value as needed */
 }
 
-.hero-resume-download {
-  position: relative;
-  top: -20px; /* Adjust the top value as needed */
-}
-
 .bigger-social-links i {
   color: #173b6c;
 }
@@ -417,34 +412,43 @@ section {
 }
 
 .skills .skill-category {
-  display: inline-block; /* Arrange skill categories horizontally */
-  vertical-align: top; /* Align skill categories vertically */
-  width: 30%; /* Adjust width as needed */
-  margin-right: 20px; /* Add some spacing between skill categories */
+  width: 100%; /* Adjust width to 100% for responsiveness */
+  margin-bottom: 20px; /* Add spacing between skill categories */
 }
 
-.skills .skill-category h4 {
-  font-size: 1em; /* Adjust the size of the subheadings */
-  margin-top: 0; /* Remove margin from top of subheadings */
-  margin-bottom: 3px; /* Decrease margin by 50% */
+.skills .skill-category h3 {
+  font-size: 1.1em; /* Adjust the size of the subheadings */
 }
 
 .skills .skill-category ul {
   list-style-type: none;
   padding-left: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .skills .skill-category ul li {
-  margin-bottom: 6px;
+  margin-right: 20px; /* Add spacing between skill items */
 }
 
 .skills .skill-category ul li:before {
   content: "\2022"; /* Bullet point */
-  color: #149ddd; /* Bullet point color */
-  font-size: 8px;
+  color: #050d18; /* Bullet point color */
+  font-size: 16px; /* Adjust bullet point size */
   margin-right: 8px;
 }
 
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .skills .skill-category {
+    width: 100%; /* Adjust width to 100% for responsiveness */
+  }
+
+  .skills .skill-category ul li {
+    margin-right: 10px; /* Reduce spacing between skill items */
+    margin-bottom: 10px; /* Add spacing between rows */
+  }
+}
 
 /*--------------------------------------------------------------
 # Resume
