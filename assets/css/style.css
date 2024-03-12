@@ -696,60 +696,62 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
---------------------------------------------------------------
-.services .icon-box {
-  margin-bottom: 20px;
+# Certifications
+--------------------------------------------------------------*/
+.certifications {
+  padding: 60px 0;
 }
 
-.services .icon {
-  float: left;
+.certifications .section-title {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.certifications .section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.certifications .section-title p {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #777;
+}
+
+.certification-tile {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title-wrapper {
+  width: 100%;
+}
+
+.title {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  background: #149ddd;
-  border-radius: 50%;
-  transition: 0.5s;
-  border: 1px solid #149ddd;
 }
 
-.services .icon i {
-  color: #fff;
-  font-size: 24px;
-  line-height: 0;
+.certificate-image {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
 }
 
-.services .icon-box:hover .icon {
-  background: #fff;
+.cert-details {
+  margin-left: 58px;
 }
 
-.services .icon-box:hover .icon i {
-  color: #149ddd;
-}
-
-.services .title {
-  margin-left: 80px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .title a {
-  color: #343a40;
-}
-
-.services .title a:hover {
-  color: #149ddd;
-}
-
-.services .description {
-  margin-left: 80px;
-  line-height: 24px;
+.small-text {
   font-size: 14px;
 }
-
 
 /*--------------------------------------------------------------
 # Contact
@@ -764,6 +766,7 @@ section {
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
+
 
 .contact .info i {
   font-size: 20px;
