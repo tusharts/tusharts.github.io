@@ -316,6 +316,11 @@ h6 {
   top: -40px; /* Adjust the top value as needed */
 }
 
+.resume-download {
+  position: relative;
+  top: -20px; /* Adjust the top value as needed */
+}
+
 .bigger-social-links i {
   color: #173b6c;
 }
