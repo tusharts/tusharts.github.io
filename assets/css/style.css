@@ -309,9 +309,14 @@ h6 {
 }
 /* Add this to your CSS file */
 .bigger-social-links {
-  margin-left: -200px; /* Adjust the margin-left value as needed */
+  position: relative;
+  margin-left: -120px; /* Adjust the margin-left value as needed */
 }
 .bigger-social-links {
+  position: relative;
+  top: -40px; /* Adjust the top value as needed */
+}
+.hero-resume-download {
   position: relative;
   top: -40px; /* Adjust the top value as needed */
 }
