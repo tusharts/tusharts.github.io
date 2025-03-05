@@ -158,7 +158,7 @@ h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  padding: 30px 0 0 0;
+  padding: 30px -5 px 0 0;
 }
 
 .nav-menu * {
@@ -177,8 +177,9 @@ h6 {
   display: flex;
   align-items: center;
   color: #a8a9b4;
-  padding: 12px 15px;
+  padding:  10px 5px;
   margin-bottom: 8px;
+  margin-left: 1px;
   transition: 0.3s;
   font-size: 15px;
 }
@@ -330,7 +331,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
@@ -363,7 +364,7 @@ section {
 }
 
 .section-title p {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -404,6 +405,7 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+
 .skills {
   font-family: "Poppins", sans-serif;
   color: #050d18;
@@ -531,6 +533,116 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+/* Portfolio Section Styling */
+.portfolio-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+/* Portfolio Card */
+.portfolio-wrap {
+  position: relative;
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.portfolio-wrap:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio Image */
+.portfolio-wrap img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 12  px;
+  border-top-right-radius: 12px;
+}
+
+/* Portfolio Info */
+.portfolio-info {
+  text-align: center;
+  padding: 15px;
+}
+
+.portfolio-info h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  margin-left: 8px;
+  margin-right: 8px;
+  ;
+}
+
+
+.portfolio-info p {
+  color: #149ddd;
+;
+  font-size: 1rem;
+  
+  margin-left: 8px;
+}
+
+/* Portfolio Info - Position Relative for Absolute Placement */
+.portfolio-info {
+  position: relative; /* This ensures absolute positioning works */
+  padding: 1px;
+  background: rgb(57, 62, 80); /* Dark semi-transparent background */
+  color: white;
+  text-align: left;
+}
+
+/* Portfolio Links - Absolute Position at Bottom Left */
+.portfolio-links {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  gap: 8px; /* Space between icons */
+}
+
+/* Icon Containers */
+.portfolio-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.1); /* Transparent background */
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Ensure Icons are Centered */
+.portfolio-links i {
+  font-size: 1.4rem; /* Adjust icon size */
+  color: white;
+}
+
+/* Hover Effect */
+.portfolio-links a:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.portfolio-links a:hover i {
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolio-item {
+    flex: 0 0 100%;
+  }
+}
+
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -540,7 +652,7 @@ section {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: #dfdeea;
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -548,13 +660,13 @@ section {
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 10px 15px 8px 15px;
+  padding: 10px 30px 10px 30px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
   color: #272829;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -566,69 +678,6 @@ section {
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
-
-.portfolio .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-
-.portfolio .portfolio-wrap .portfolio-links {
-  opacity: 1;
-  left: 0;
-  right: 0;
-  bottom: -60px;
-  z-index: 3;
-  position: absolute;
-  transition: all ease-in-out 0.3s;
-  display: flex;
-  justify-content: center;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
-  font-size: 28px;
-  text-align: center;
-  background: rgba(20, 157, 221, 0.75);
-  transition: 0.3s;
-  width: 50%;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
-}
-
-.portfolio .portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
-}
-
-.portfolio .portfolio-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-links {
-  opacity: 1;
-  bottom: 0;
-}
-
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -706,7 +755,7 @@ section {
 .portfolio-item {
   padding: 15px; /* Adjust padding to create symmetrical spacing */
 }
-
+*/
 /*--------------------------------------------------------------
 # Certifications
 --------------------------------------------------------------*/
@@ -770,7 +819,7 @@ section {
 # Socials
 --------------------------------------------------------------*/
 .socials {
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
 
 /*--------------------------------------------------------------
