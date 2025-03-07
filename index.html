@@ -727,6 +727,18 @@
           <!--<h3>Behance</h3>-->
           <p><a href="https://www.behance.net/tusharsingh19" target="_blank">behance/tusharsingh19</a></p>
         </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="info-box mb-4">
+          <i class="bx bx-envelope"style="font-size: 2.5rem;"></i>
+          <!--<h3>Behance</h3>-->
+            <p><a href="mailto:betusharsingh@gmail.com" target="_blank">betusharsingh@gmail.com</a></p>
+        </div>
+      </div>
+     
+    </div>
+  
 </section>
 <!-- End Social Section -->
 
@@ -738,6 +750,31 @@
           <h2>Contact</h2>
           <p>You can reach out to me using the following contact information:</p>
         </div>
+      
+          <!--End Contact Section -->
+          <div class="contact-section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out! I'll get back to you as soon as possible.</p>
+            
+            <form action="forms/contact.php" method="post" class="contact-form">
+                <div class="input-group">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                
+                <div class="status-messages">
+                    <div class="loading">Loading...</div>
+                    <div class="error-message">Oops! Something went wrong.</div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        
+          <!-- End mail to me Section -->
     
         <div class="row" data-aos="fade-up">
     
@@ -749,14 +786,6 @@
             </div>
           </div>
     
-          <div class="col-lg-6">
-            <div class="info-box mb-4">
-              <i class="bx bx-envelope"></i>
-              <h3>Email</h3>
-              <p>betusharsingh@gmail.com</p>
-            </div>
-          </div>
-    
           <div class="col-lg-12">
             <div class="info-box mb-4">
               <iframe src="https://www.google.com/maps?q=Saket,Delhi&hl=en&z=15&output=embed" width="100%" height="384" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -765,10 +794,6 @@
           </div>
     
         </div>
-    
-      </div>
-    </section>
-    <!-- End Contact Section -->
 
 
   </main><!-- End #main -->
