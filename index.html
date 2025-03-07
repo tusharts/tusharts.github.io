@@ -751,30 +751,20 @@
           <p>You can reach out to me using the following contact information:</p>
         </div>
       
-          <!--End Contact Section -->
-          <div class="contact-section">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out! I'll get back to you as soon as possible.</p>
-            
-            <form action="forms/contact.php" method="post" class="contact-form">
-                <div class="input-group">
-                    <input type="text" name="name" id="name" placeholder="Your Name" required>
-                    <input type="email" name="email" id="email" placeholder="Your Email" required>
-                </div>
-                <input type="text" name="subject" id="subject" placeholder="Subject" required>
-                <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
-                
-                <div class="status-messages">
-                    <div class="loading">Loading...</div>
-                    <div class="error-message">Oops! Something went wrong.</div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-                
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-        
-          <!-- End mail to me Section -->
+<!-- Start Contact Section -->
+<form id="contact-form">
+  <input type="text" name="name" placeholder="Your Name" required><br>
+  <input type="email" name="email" placeholder="Your Email" required><br>
+  <input type="text" name="subject" placeholder="Subject" required><br>
+  <textarea name="message" placeholder="Message" required></textarea><br>
+  <button type="submit">Send Message</button>
+</form>
+
+<!-- Link JavaScript file -->
+<script src="contact.js"></script>
+<!-- End Contact Section -->
+
+
     
         <div class="row" data-aos="fade-up">
     
