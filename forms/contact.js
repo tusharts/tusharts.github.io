@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const formData = new FormData(this);
 
-        fetch("contact.php", {  // Call backend instead of Telegram directly
+        fetch("contact.php", {  // Calls backend to process form
             method: "POST",
             body: formData
         })

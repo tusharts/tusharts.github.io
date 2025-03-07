@@ -1,5 +1,7 @@
 <?php
-$botToken = "7638645172:AAEFiwwvAnRE-LWrPCfuuP9cbl2LPW8FRak";
+header("Content-Type: application/json"); // Set JSON response type
+
+$botToken = "bot7638645172:AAEFiwwvAnRE-LWrPCfuuP9cbl2LPW8FRak"; 
 $chatId = "1116211356";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -27,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $context = stream_context_create($options);
     $response = file_get_contents($url, false, $context);
-    
+
     echo json_encode(["success" => true]);
 } else {
     echo json_encode(["success" => false, "message" => "Invalid request"]);
