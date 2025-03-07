@@ -1,7 +1,7 @@
 <?php
 header("Content-Type: application/json"); // Set JSON response type
 
-$botToken = "bot7638645172:AAEFiwwvAnRE-LWrPCfuuP9cbl2LPW8FRak"; 
+$botToken = "7638645172:AAEFiwwvAnRE-LWrPCfuuP9cbl2LPW8FRak"; 
 $chatId = "1116211356";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
