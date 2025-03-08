@@ -1,3 +1,4 @@
+/*
 export default {
     async fetch(request) {
       if (request.method === "POST") {
@@ -29,4 +30,4 @@ export default {
       return new Response("Invalid request", { status: 405 });
     },
   };
-  
+*/

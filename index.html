@@ -751,18 +751,55 @@
           <p>You can reach out to me using the following contact information:</p>
         </div>
       
-<!-- Start Contact Section -->
-<form id="contact-form" action="contact.php" method="post">
-  <input type="text" name="name" placeholder="Your Name" required><br>
-  <input type="email" name="email" placeholder="Your Email" required><br>
-  <input type="text" name="subject" placeholder="Subject" required><br>
-  <textarea name="message" placeholder="Message" required></textarea><br>
-  <button type="submit">Send Message</button>
-</form>
+<!-- Start Contact form Section -->
 
+</style>
+</head>
+<body>
+<div class="contact-form">
+
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="email" id="email" placeholder="Your Email" required>
+<textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+<button onclick="sendMessage()">Send</button>
+</div>
+
+<script>
+function sendMessage() {
+  const botToken = "7638645172:AAEFiwwvAnRE-LWrPCfuuP9cbl2LPW8FRak"; // Replace with your bot token
+  const chatId = "1116211356"; // Replace with your chat ID
+  
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+  
+  if (!name || !email || !message) {
+      alert("Please fill in all fields.");
+      return;
+  }
+  
+  const text = `New Contact Form Submission:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
+  const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(text)}`;
+  
+  fetch(url)
+      .then(response => response.json())
+      .then(data => {
+          if (data.ok) {
+              alert("Message sent successfully!");
+              document.getElementById("name").value = "";
+              document.getElementById("email").value = "";
+              document.getElementById("message").value = "";
+          } else {
+              alert("Failed to send message. Check your bot token and chat ID.");
+          }
+      })
+      .catch(error => alert("Error: " + error));
+}
+</script>
+</body>
 <!-- Link JavaScript file -->
 <script src="contact.js"></script>
-<!-- End Contact Section -->
+<!-- End Contact form Section -->
 
 
     
@@ -770,8 +807,8 @@
     
           <div class="col-lg-6">
             <div class="info-box mb-4">
-              <i class="bx bx-map"></i>
-              <h3>Address</h3>
+              <i class="bx bxs-map"style="font-size: 2.5rem; margin-top:10px";></i>
+            
               <p>Saket, New Delhi, India</p>
             </div>
           </div>

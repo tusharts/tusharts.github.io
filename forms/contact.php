@@ -1,4 +1,6 @@
+
 <?php
+/*
 header("Content-Type: application/json"); // Set JSON response type
 
 $botToken = "7638645172:AAEFiwwvAnRE-LWrPCfuuP9cbl2LPW8FRak"; 
@@ -35,3 +37,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     echo json_encode(["success" => false, "message" => "Invalid request"]);
 }
 ?>
+*/
