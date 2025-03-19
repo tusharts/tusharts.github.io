@@ -859,11 +859,14 @@ section {
 }
 
 
+
+
 /*--------------------------------------------------------------
 # Socials
 --------------------------------------------------------------*/
 .socials {
   padding-bottom: 0px;
+  margin-left: -20px;
 }
 
 /*--------------------------------------------------------------
@@ -873,6 +876,13 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+#contact .section-title h2 {
+  transform: translateX(-10px); /* Moves the text 20px to the left */
+}
+#contact .section-title p {
+  transform: translateX(-10px); /* Moves the text 20px to the left */
+}
+
 form {
   width: 100%;
   max-width: 500px;
